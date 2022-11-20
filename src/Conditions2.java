@@ -33,5 +33,33 @@ public class Conditions2 {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
 
+        //Задача3
+        System.out.println("Задача 3");
+
+        int fourYearPeriod = 0;
+        int fourHundredYearPeriod = 0;
+        int year = 2021;
+
+        for (fourYearPeriod = 0; fourYearPeriod<3000; fourYearPeriod = fourYearPeriod+4){
+            if (year == fourYearPeriod) {
+                System.out.println("Проверка на 4-х летний период пройдена успешно");
+                break;
+            }
+            }
+        for (fourHundredYearPeriod=0; fourHundredYearPeriod<3000; fourHundredYearPeriod=fourHundredYearPeriod+400){
+            if (year == fourHundredYearPeriod) {
+                System.out.println("Проверка на 400-летний период пройдена успешно");
+                break;
+            }
+
+        }
+        boolean viscosityYear = year == fourYearPeriod || year == fourHundredYearPeriod;
+        if (viscosityYear) {
+            System.out.println("Это високосный год");
+        }
+        else {
+            System.out.println("Это обычный год");
+        }
+
     }
 }
