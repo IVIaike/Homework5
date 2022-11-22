@@ -61,5 +61,16 @@ public class Conditions2 {
             System.out.println("Это обычный год");
         }
 
+        //Задача4
+        System.out.println("Задача 4");
+
+        int deliveryDistance = 95;
+        int deliveryCircle = 40;
+        int deliveryDays = 1 + (deliveryDistance + 20)/deliveryCircle; // +1 день в начале формулы - это первый день если доставка происходит в радиусе 20 км
+
+        System.out.println("Если дистанция до клиента составит " + deliveryDistance + " км, то время доставки карты составит " + deliveryDays + " дня");
+
+
+
     }
 }
